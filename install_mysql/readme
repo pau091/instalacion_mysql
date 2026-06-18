@@ -1,0 +1,48 @@
+# Instalación y Configuración de MySQL
+
+## Información del Estudiante
+* **Nombre.** Paula Navarro
+* **Sistema Operativo Utilizado:** Windows 11 Pro 
+* **Institución:** Campuslands
+
+---
+
+## Proceso de Instalación
+
+El proceso de configuración del entorno de desarrollo local se realizó mediante los siguientes pasos esenciales:
+
+1. **Descarga del Instalador:** Se accedió al sitio web oficial de MySQL y se descargó el *MySQL Installer* (que incluye el servidor y la herramienta gráfica).
+2. **Configuración de Servidor y Credenciales:** Durante la instalación guiada, se seleccionó la configuración por defecto para desarrolladores, estableciendo el puerto `3306` y definiendo la contraseña de seguridad para el usuario administrador (`root`).
+3. **Instalación de Componentes:** Se ejecutó la instalación de **MySQL Server** y **MySQL Workbench**.
+4. **Finalización y Conexión:** Se inicializó el servicio local y se abrió el entorno gráfico para realizar las pruebas de conectividad.
+
+---
+
+## Galería de Evidencias
+
+### Captura 1: Descarga e Inicio del Instalador
+*Descripción: Momento en el que el instalador de MySQL se está ejecutando en el sistema de manera correcta.*
+> https://ibb.co/Lhn83ZpX
+> https://ibb.co/7t66DhYc
+### Captura 2: Configuración de Credenciales (Usuario Root)
+*Descripción: Pantalla del asistente de instalación donde se define la contraseña segura para el usuario root.*
+> https://ibb.co/Zpwtd7cj
+
+### Captura 3: Interfaz de MySQL Workbench
+*Descripción: Entorno gráfico de MySQL Workbench abierto con la conexión predeterminada "Local Instance" creada con éxito.*
+> https://ibb.co/jkFF8hMK
+> https://ibb.co/wZND7rqJ
+
+## Validación del Entorno
+
+Para confirmar la correcta instalación y funcionamiento del motor de bases de datos, se abrió una pestaña de Query en MySQL Workbench y se ejecutó la sentencia de validación requerida.
+> https://ibb.co/0RRWzqR5
+
+### Sentencia SQL Ejecutada:
+```sql
+-- Consulta de validación de entorno
+SELECT VERSION() AS 'Versión de MySQL', 
+       CURRENT_USER() AS 'Usuario Actual', 
+       NOW() AS 'Fecha y Hora del Servidor';
+ ---------CAPTURA VALIDACION-----------
+> https://ibb.co/sJFF3n9v
